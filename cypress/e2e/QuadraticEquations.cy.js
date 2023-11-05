@@ -77,7 +77,7 @@ describe('Giải phương trình bậc 2', () => {
   });
   //Test case 8
   it("Kiểm tra thông báo lỗi khi nhập b là kí tự", () => {
-    // Nhập các kí tự không hợp lệ cho a và nhấp vào nút "Giải"
+    // Nhập các kí tự không hợp lệ cho b và nhấp vào nút "Giải"
     cy.get("#a").type("3");
     cy.get("#b").type('xyz');
     cy.get("#c").type("5");
@@ -88,7 +88,7 @@ describe('Giải phương trình bậc 2', () => {
 
   //Test case 9
   it("Kiểm tra thông báo lỗi khi nhập c là kí tự", () => {
-    // Nhập các kí tự không hợp lệ cho a và nhấp vào nút "Giải"
+    // Nhập các kí tự không hợp lệ cho c và nhấp vào nút "Giải"
     cy.get("#a").type("3");
     cy.get("#b").type('5');
     cy.get("#c").type("g");
